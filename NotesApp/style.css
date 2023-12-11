@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #274065, #ca95d7);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.card{
+    margin-top: 50px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.heading img{
+    height: 40px;
+}
+.btn{
+    outline: 0;
+    border: 0;
+    background: blueviolet;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    gap: 7px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: blue;
+}
+.btn img{
+    height: 20px;
+}
+.notearea p{
+    outline: 0;
+    border: 0;
+    background-color: white;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.notearea img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 4px;
+    height: 30px;
+    cursor: pointer;
+}
+.notearea img:hover{
+    transform: scale(1.1);
+}

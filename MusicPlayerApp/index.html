@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0dc19d5e10.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img src="songImage.jpg" id="thumb" class="img" alt="" />
+        <h1 id="title"></h1>
+        <p id="singer"></p>
+        <audio id="song">
+          <source src="" type="audio/mpeg" />
+        </audio>
+
+        <div class="time">
+          <span id="start">2:28</span>
+          <span id="end">4:33</span>
+        </div>
+
+        <input type="range" id="progress" value="0" />
+
+        <div class="controls">
+          <div onclick="prevPlay()"><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="play"></i>
+          </div>
+          <div onclick="nextPlay()"><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

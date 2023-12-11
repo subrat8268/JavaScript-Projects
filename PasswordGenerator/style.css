@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.card{
+    margin-left: 80px;
+    width: 90%;
+    max-width: 400px;
+}
+
+h2{
+    letter-spacing: 0.3rem;
+}
+
+h2:first-child{
+    color: white;
+}
+.green{
+    color: green;
+}
+.dash{
+    border-radius: 10px;
+    height: 3px;
+    width: 223px;
+    background-color: green;
+}
+.password{
+    height: 45px;
+    background-color: aliceblue;
+    margin: 20px 0;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.password img{
+    height: 30px;
+    cursor: pointer;
+}
+.password img:hover{
+    transform: scale(0.95);
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+button{
+    padding: 3px 10px;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 193, 34);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(0.9);
+}
+button img{
+    height: 40px;
+    margin-right: 5px;
+}
+

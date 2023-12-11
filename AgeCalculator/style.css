@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(42, 1, 67), #2e62ff);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.card{
+    margin-top: 100px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.header{
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.header .two{
+    color: yellow;
+}
+
+.input-container{
+    background: #f3f0f02e;
+    padding: 20px;
+    border-radius: 5px;
+}
+input,button{
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+input{
+    position: relative;
+    padding: 10px 15px;
+    width: 300px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+input::-webkit-calendar-picker-indicator{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 20px;
+    cursor: pointer;
+}
+button{
+    padding: 10px 15px;
+    background-color: yellow;
+    border-radius: 5px;
+}
+button:hover{
+    transform: scale(1.1);
+}
+p{
+    font-size: larger;
+    margin-top: 20px;
+    color: white;
+}
+span{
+    color: yellow;
+}
