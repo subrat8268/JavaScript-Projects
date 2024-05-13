@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .nav-center {
+        font-weight: 700;
+        color: black;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 20px;
+        letter-spacing: 2px;
+      }
+      .nav-center h4 {
+        background: linear-gradient(to right, #280ca3, #e4a575);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .container {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h2 {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        font-size: 40px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .display {
+        font-size: 70px;
+        font-weight: 600;
+      }
+      .btn-section {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .btn {
+        /* background: white; */
+        /* color: white; */
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 5px 15px;
+        font-size: 15px;
+        border-radius: 50px;
+        outline: inherit;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin: 0 10px;
+      }
+      .btn:hover {
+        background: black;
+        color: white;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-center">
+      <h4>Counter</h4>
+    </div>
+
+    <main>
+      <div class="container">
+        <h2>Counter</h2>
+        <div class="display">0</div>
+        <div class="btn-section">
+          <button class="btn dec" id="DecBtn">Decrease</button>
+          <button class="btn reset" id="ResetBtn">Reset</button>
+          <button class="btn inc" id="IncBtn">Increase</button>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let btns = document.querySelectorAll(".btn");
+      let display = document.querySelector(".display");
+      
+      let count = 0;
+      btns.forEach(btn => {
+        btn.addEventListener("click", function (e) {
+          const btnValue = e.currentTarget.classList[1];
+          if(btnValue.includes('inc')){
+            count++;
+          }
+          else if(btnValue.includes('dec')){
+            count--;
+          }
+          else{
+            count = 0;
+          }
+          if(count>0){
+              display.style.color = 'green';
+          }
+          else if(count<0){
+              display.style.color = 'red';
+          }
+          else{
+              display.style.color = 'black';
+          }
+          display.innerText = count;
+        });
+        
+      });
+
+    </script>
+  </body>
+</html>

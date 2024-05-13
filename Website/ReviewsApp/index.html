@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Review App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100vw;
+        height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .nav-center {
+        font-weight: 700;
+        color: black;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 20px;
+        letter-spacing: 2px;
+      }
+      .nav-center h4 {
+        background: linear-gradient(to right, #280ca3, #e4a575);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+
+      .container {
+        /* height: 40vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      h2 {
+        padding: 10px;
+        font-size: 40px;
+        border-radius: 10px;
+      }
+      .dash {
+        height: 3px;
+        background-color: rgb(151, 110, 255);
+        width: 170px;
+        margin-bottom: 20px;
+      }
+      .review {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 800px;
+        /* height: 100%; */
+        padding: 30px 100px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        box-shadow: rgb(151, 110, 255) 10px -5px 0px;
+      }
+      .img-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      #author {
+        margin-top: 5px;
+      }
+      .job {
+        text-transform: uppercase;
+        color: #7154f198;
+        font-weight: 600;
+        margin: 4px 0;
+      }
+      .info {
+        text-align: center;
+        margin: 6px 0;
+      }
+      .button-container {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+      }
+      .btn {
+        border: 2px solid black;
+        cursor: pointer;
+        padding: 5px 5px;
+        font-size: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        margin: 10px 10px;
+      }
+      i {
+        color: black !important;
+      }
+      .btn:hover {
+        background: black;
+        color: white !important;
+        box-shadow: none;
+      }
+      .btn:hover > i {
+        background: black;
+        color: white !important;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-center">
+      <h4>Review</h4>
+    </div>
+
+    <main>
+      <div class="container">
+        <!-- Title -->
+        <div class="title">
+          <h2>Reviews</h2>
+          <div class="dash"></div>
+        </div>
+
+        <!-- Reviews -->
+        <article class="review">
+          <div class="img-container">
+            <img src="" id="person-img" alt="" />
+            <h4 id="author">Sara Jone</h4>
+            <div class="job">UX Designer</div>
+            <div class="info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              magni optio quasi dolores, quia iusto error explicabo illo numquam
+              aspernatur
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="prevBtn btn">
+              <i class="fas fa-chevron-left" style="color: #280ca3"></i>
+            </div>
+            <div class="nextBtn btn">
+              <i class="fas fa-chevron-right" style="color: #280ca3"></i>
+            </div>
+          </div>
+
+          <button class="btn" id="randomBtn">Surprise Me</button>
+        </article>
+      </div>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/0dc19d5e10.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
